@@ -1,0 +1,9 @@
+stages:
+  - run
+
+run_python:
+  stage: run
+  image: python:3.11
+  script:
+    - pip install -r requirements.txt
+    - python your_script.py
